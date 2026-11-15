@@ -5,7 +5,7 @@ import Avatar from "../../assets/images/Avatar.svg";
 //import image
 import styles from "./NavbarLeft.module.scss";
 
-export function NavbarLeft() {
+export default function NavbarLeft() {
   return (
     <div className={styles.NavbarLeft}>
       <div className={styles.top}>
@@ -13,19 +13,17 @@ export function NavbarLeft() {
           <img src={RfLogo} alt="RfLogo" className="logo" />
         </div>
         <div className={styles.NavOrg}>
-        <img src={OrgLogo} alt="OrgLogo" className="logo" />
-
+          <img src={OrgLogo} alt="OrgLogo" className="logo" />
         </div>
       </div>
 
       <div className={styles.bottom}>
         <div className={styles.NavUser}>
-        <img src={Avatar} alt="Avatar" className="logo" />
-
+          <img src={Avatar} alt="Avatar" className="logo" />
         </div>
       </div>
     </div>
   );
 }
 
-export default NavbarLeft;
+
