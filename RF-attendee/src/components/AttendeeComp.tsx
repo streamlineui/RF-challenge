@@ -51,11 +51,17 @@ export function AttendeeComp() {
           <strong>Step 2:</strong> Build registration workflows.
         </h4>
 
+        <div className={styles.Rows}>
         <div className={styles.Row}>
           <Card />
           <Card />
           <Card />
         </div>
+        </div>
+
+        <div className={styles.Rows}>
+        </div>
+
       </div>
     </div>
 
