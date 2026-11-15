@@ -1,7 +1,9 @@
 import { Card } from "./Card";
-
+import LogicArrow from '../assets/images/LogicArrow.svg';
 import styles from "./AttendeeComp.module.scss";
-import PersonPortal from "../assets/images/PersonPortal.svg";
+import addCircle from "../assets/images/addCircle.svg";
+import PersonPortal  from "../assets/images/PersonPortal.svg"
+
 
 export function AttendeeComp() {
   return (
@@ -57,9 +59,16 @@ export function AttendeeComp() {
           <Card />
           <Card />
         </div>
+
+        <div className={styles.Row}>
+        <Card 
+          title="Custom Workflow" 
+          description="Configure advanced rule-based routing for special guests"
+          icon={addCircle}
+          className={styles.highlightedCard} 
+        />
         </div>
 
-        <div className={styles.Rows}>
         </div>
 
       </div>
