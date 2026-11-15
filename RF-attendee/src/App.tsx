@@ -4,8 +4,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.scss'
 import { Attendee } from './pages/Attendee';
-import { NavbarLeft } from './components/navbar/NavbarLeft.jsx';
-import { NavbarRight } from './components/navbar/NavbarLeft.jsx';
+import  NavbarLeft from "./components/navbar/NavbarLeft.js";
+import  NavbarRight from "./components/navbar/NavbarRight.jsx";
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
