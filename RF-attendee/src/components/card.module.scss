@@ -45,22 +45,15 @@
 
 
 
-    .centered {
-        display: flex;
-        width: 21.35419rem;
-        padding: 1.5rem 2rem;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0.25rem;
-        flex-shrink: 0;
-        align-self: stretch;
-
-        border-radius: 0.25rem;
-        border: 1px solid $color-page-border;
-        background: $color-page-surface;
-
-    }
+        &.centered {
+            align-items: center;     // Centers the children horizontally in a column layout
+            justify-content: center; // Centers them vertically
+            text-align: center;      // Centers the description text
+          
+            .cardHeader {
+              justify-content: center; // Centers the icon (and title if present) inside the header row
+            }
+          }
 
 
 }

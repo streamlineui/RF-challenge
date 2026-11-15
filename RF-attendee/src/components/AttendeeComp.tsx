@@ -54,18 +54,20 @@ export function AttendeeComp() {
         </h4>
 
         <div className={styles.Rows}>
-        <div className={styles.Row}>
-          <Card title="Attendee Registration" />
-          <Card title="Attendee Registration"/>
-          <Card title="Attendee Registration"/>
-        </div>
 
-        <div className={styles.Row}>
-        <Card 
-          description="Add Registration Workflow"
-          icon={addCircle}
-          className={styles.centered} 
-        />
+            <div className={styles.Row}>
+            <Card title="Attendee Registration" />
+            <Card title="Attendee Registration"/>
+            <Card title="Attendee Registration"/>
+            </div>
+
+            <div className={styles.Row}>
+            <Card 
+            description="Add Registration Workflow"
+            icon={addCircle}
+            centered
+            />
+
         </div>
 
         </div>
