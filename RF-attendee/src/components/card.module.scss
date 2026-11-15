@@ -3,7 +3,64 @@
 
 .card {
 
+    flex: 1;           // Makes every item stretch equally to fill the row
+    min-width: 0;      // Crucial: prevents text/content from breaking the flex layout
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    flex-shrink: 0;
+    align-self: stretch;
+    height: 7.5rem;
+    padding: 1.5rem 2rem;
+
+    border-radius: 0.25rem;
+    border: 1px solid $color-page-border;
+    background: $color-page-surface;
 
 
-    
+
+    .cardHeader {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            svg {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+
+            .h4 {
+                @include text(detail-card-primary);
+                color: $color-text-header
+            }
+
+        }
+
+        p {
+            @include text(detail-label-support);
+            color: $color-brand-primary-dark;
+            width: 16.6875rem;
+        }
+
+
+
+    .centered {
+        display: flex;
+        width: 21.35419rem;
+        padding: 1.5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.25rem;
+        flex-shrink: 0;
+        align-self: stretch;
+
+        border-radius: 0.25rem;
+        border: 1px solid $color-page-border;
+        background: $color-page-surface;
+
+    }
+
+
 }

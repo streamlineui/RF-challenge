@@ -35,7 +35,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 0.5rem;
+        gap: 1.5rem;
         align-self: stretch;
 
         .stepTitle {
@@ -47,7 +47,7 @@
 
             display: flex;
             width: 100%;
-            height: 7.5rem;
+            height: fit-content;
             padding: 1rem 1.5rem;
             align-items: flex-start;
             gap: 2rem;
@@ -76,7 +76,8 @@
 
                 p {
                     @include text(detail-label-support);
-                    color: $color-brand-primary-dark
+                    color: $color-brand-primary-dark;
+                    width: 12.8125rem;
                 }
 
             }
@@ -84,17 +85,31 @@
 
 
 
+
+
         }
 
-        .itemRow> :last-child {
-            visibility: hidden;
+        .Row {
+            display: flex;
+            width: 100%;
+            height: fit-content;
+            align-items: flex-start;
+            gap: 1.5rem;
         }
 
+        .hideLastChild {
+            > :last-child {
+                visibility: hidden;
+            }
+
+
+
+        }
+
+
+
+        //add styles for step layout 
+
+        //row of cards or content
     }
-
-
-    //add styles for step layout 
-
-    //row of cards or content
-
 }
