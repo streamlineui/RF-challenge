@@ -1,2 +1,52 @@
 
+@use '../../styles/_variables' as *;
+@use '../../styles/_mixins' as *;
 
+
+
+.NavbarRight {
+
+    display: flex;
+    width: 215px;
+    padding: 12px 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    border-right: 1px solid $color-page-border;
+
+
+    header {
+        display: flex;
+        padding: 8px 8px 12px 8px;
+        align-items: flex-start;
+        align-self: stretch;
+
+    }
+
+    .details {
+        display: flex;
+        padding: 0 8px 12px 8px;
+        align-items: flex-start;
+        align-self: stretch;
+
+    }
+
+    .search {
+        display: flex;
+        padding: 0 8px 12px 8px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        align-self: stretch;
+
+    }
+
+    .megaNavWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+
+}
