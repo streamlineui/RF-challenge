@@ -1,0 +1,11 @@
+@use '../../styles/_variables' as *;
+@use '../../styles/_mixins' as *;
+
+.pageWrapper {
+    display: flex;
+    height: 64rem;
+    padding: 2.5rem 3rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
