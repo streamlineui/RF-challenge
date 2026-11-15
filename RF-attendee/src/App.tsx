@@ -4,7 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.scss'
 import { Attendee } from './pages/attendee/Attendee.jsx';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, Navigate } from 'react-router-dom';
 
 
 /*
@@ -17,14 +17,15 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
-      {/* Optional navigation links */}
+      {/* Attendee navigation link */}
       <nav>
       <Link to="/attendees">Attendees</Link>
       </nav>
 
       {/* Route definitions */}
       <Routes>
-        <Route path="/attendees" element={<Attendee/>} />
+      <Route path="/" element={<Attendee />} />
+      <Route path="/attendees" element={<Attendee />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,8 +1,8 @@
 
 //import image
 import styles from './header.module.scss';
-import Button from './components/Button'; 
-import LogoL from './assets/images/LogoL.png'; // Include the exact file extension
+
+import LogoL from '../assets/images/LogoL.png'; 
 
 
 
