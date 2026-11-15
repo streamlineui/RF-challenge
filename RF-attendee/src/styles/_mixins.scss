@@ -1,0 +1,14 @@
+@import 'variables';
+
+@mixin text($name) {
+    $config: map-get($typography-styles, $name);
+    
+    @if $config {
+      font-family: map-get($config, font-family) or "Inter";
+      font-size: map-get($config, size);
+      font-weight: map-get($config, weight);
+      line-height: map-get($config, line-height) or normal;
+    } @else {
+      @error "Unknown typography style: `#{$name}`";
+    }
+  }

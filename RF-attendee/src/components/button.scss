@@ -1,0 +1,18 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.btn {
+    background-color: $color-brand-primary-main;
+    color: $color-page-surface;
+    @include text("detail-button");
+    padding: 0.625rem 1.25rem;
+    border-radius: 6px;
+    
+
+    //create hover state for button and connect 
+    &:hover {
+      background-color: $color-brand-primary-dark;
+    }
+
+    //no media query needed*
+  }

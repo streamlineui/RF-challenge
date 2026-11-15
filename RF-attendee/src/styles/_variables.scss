@@ -1,0 +1,32 @@
+
+$color-text-header: #222222;
+$color-text-body-gray: #444444;
+$color-text-body-placeholder: #777777;
+$color-brand-primary-main: #5c00dc;
+$color-brand-primary-dark: #393551;
+$color-brand-primary-5-fill: #5c00dc14;
+$color-neutral-black: #000000;
+$color-neutral-gray: #767676;
+$color-neutral-fill: #f5f5f5;
+$color-page-surface: #ffffff;
+$color-page-border: #cbc6de;
+
+
+$typography-styles: (
+  "body-p":             (size: 16px, weight: 400, line-height: 24px),
+  "header-h1":          (size: 32px, weight: 300),
+  "header-h2":          (size: 24px, weight: 600),
+  "header-h3":          (size: 20px, weight: 600),
+  "detail-button":      (size: 14px, weight: 700),
+  "detail-metadata":    (size: 10px, weight: 500, line-height: 18.2px),
+  "detail-placeholder": (size: 10px, weight: 600, line-height: 10px),
+  "detail-label-main":  (size: 14px, weight: 600, line-height: 18.2px),
+  "detail-label-gray":  (size: 14px, weight: 600, line-height: 14px),
+  "detail-label-step":  (size: 14px, weight: 400),
+  "detail-label-support":(size: 12px, weight: 400),
+  "detail-card-primary":(size: 13px, weight: 700),
+  "detail-card-exception": (size: 13px, weight: 700, font-family: "Open Sans")
+);
+
+
+

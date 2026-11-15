@@ -1,0 +1,63 @@
+//page styling and defaults
+
+
+
+
+
+
+@import 'variables';
+@import 'mixins'; 
+
+/* 1. Global Box-Sizing */
+html,
+body,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Strip Browser Defaults */
+body,
+h1, h2, h3, h4, h5, h6,
+p, figure, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Smooth Scrolling for SPA Anchors */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px; // Base rem reference
+}
+
+/* 4. Body Defaults & Typography */
+body {
+    background-color: $color-page-bg;
+    margin: 0;
+  }
+
+/* 5. Responsive Media */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 6. Form Element Inheritance */
+input,
+button,
+textarea,
+select {
+  font: inherit; // Ensures inputs don't fall back to ugly browser defaults
+}
+
+
+
+/* 7. Layout for Step */
+
+
+/* 8. border-box */
