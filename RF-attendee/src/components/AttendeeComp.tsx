@@ -1,9 +1,9 @@
 import { Card } from "./Card";
-import LogicArrow from '../assets/images/LogicArrow.svg';
+import LogicArrow from "../assets/images/LogicArrow.svg";
 import styles from "./AttendeeComp.module.scss";
 import addCircle from "../assets/images/addCircle.svg";
-import PersonPortal  from "../assets/images/PersonPortal.svg"
-
+import PersonPortal from "../assets/images/PersonPortal.svg";
+import Computer from "../assets/images/Computer.svg";
 
 export function AttendeeComp() {
   return (
@@ -54,42 +54,69 @@ export function AttendeeComp() {
         </h4>
 
         <div className={styles.Rows}>
-{/* no map function here bc content repeats, array creation unecessary */}
-            <div className={styles.Row}>
+          {/* no map function here bc content repeats, array creation unecessary */}
+          <div className={styles.Row}>
             <Card title="Attendee Registration" />
-            <Card title="Attendee Registration"/>
-            <Card title="Attendee Registration"/>
-            </div>
+            <Card title="Attendee Registration" />
+            <Card title="Attendee Registration" />
+          </div>
 
-            <div className={styles.Row}>
-            <Card 
-            description="Add Registration Workflow"
-            icon={addCircle}
-            centered
+          <div className={styles.Row}>
+            <Card
+              description="Add Registration Workflow"
+              icon={addCircle}
+              centered
             />
 
-<Card 
-            description="Add Registration Workflow"
-            icon={addCircle}
-            centered
-            hidden
+            <Card
+              description="Add Registration Workflow"
+              icon={addCircle}
+              centered
+              hidden
             />
 
-<Card 
-            description="Add Registration Workflow"
-            icon={addCircle}
-            centered
-            hidden
+            <Card
+              description="Add Registration Workflow"
+              icon={addCircle}
+              centered
+              hidden
             />
-
+          </div>
         </div>
 
-        </div>
+        <h4 className={styles.stepTitle}>
+          <strong>Step 3:</strong> Design post-registration experiences.
+        </h4>
 
+        <div className={styles.Rows}>
+          {/* no map function here bc content repeats, array creation unecessary */}
+          <div className={styles.Row}>
+            <Card
+              title="Attendee Portal"
+              description="Manage the portal that attendees will see after they’ve register for your event."
+              icon={Computer}
+            />
+
+            <Card
+              title="Attendee Portal"
+              description="Manage the portal that attendees will see after they’ve register for your event."
+              icon={Computer}
+              hidden
+            />
+
+<Card
+              title="Attendee Portal"
+              description="Manage the portal that attendees will see after they’ve register for your event."
+              icon={Computer}
+              hidden
+            />
+
+
+
+          </div>
+        </div>
       </div>
     </div>
-
-
   );
 }
 
