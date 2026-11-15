@@ -5,9 +5,9 @@
 .btn {
     background-color: $color-brand-primary-main;
     color: $color-page-surface;
-    @include text("detail-button");
+    @include text(detail-button);
     padding: 0.625rem 1.25rem;
-    border-radius: 6px;
+    border-radius: 4px;
     
 
     //create hover state for button and connect 
@@ -15,5 +15,5 @@
       background-color: $color-brand-primary-dark;
     }
 
-    //no media query needed*
+    
   }
