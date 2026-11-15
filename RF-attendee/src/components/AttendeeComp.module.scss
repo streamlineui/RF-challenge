@@ -7,6 +7,62 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 gap: 1.5rem;
+border-top: 1px solid var(--rf-brand-color-border);
+
+
+
+step {
+
+    header {
+        @include text(body-p);
+        color: $color-text-body-gray
+    }
+
+    item {
+
+        display: flex;
+        padding: 0.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+
+        border-radius: 0.25rem;
+        background: $color-page-surface;
+
+        content {
+
+            display: flex;
+width: 67.0625rem;
+height: 7.5rem;
+padding: 1rem 1.5rem;
+align-items: flex-start;
+gap: 2rem;
+
+border-radius: 0.25rem;
+border: 1px solid $color-page-border;
+background: $color-page-surface;
+
+
+
+
+            title {
+                @include text(detail-card-primary);
+                color: $color-text-header
+            }
+
+            p {
+                @include text(detail-card-support);
+                color: $color-brand-primary-dark
+            }
+
+
+        }
+
+         
+
+    }
+
+}
 
 
 //add styles for step layout 
