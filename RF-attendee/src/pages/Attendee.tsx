@@ -1,6 +1,7 @@
 import Header from '../components/Header'; 
 import { PageWrapper } from '../components/layout/PageWrapper';
 import styles from './Attendee.module.scss'
+import { AttendeeComp } from '../components/AttendeeComp'
 
 
 
@@ -8,7 +9,7 @@ export function Attendee() {
     return (
 
         <PageWrapper>
-            
+
             <Header />
 
             <section className={styles['section-one']}>
