@@ -17,6 +17,8 @@ export function Attendee() {
             <p>See the available list of modules below. We suggest that you start with the attendee module.</p>
             </section>
 
+            <AttendeeComp />
+
     
         </PageWrapper>
        

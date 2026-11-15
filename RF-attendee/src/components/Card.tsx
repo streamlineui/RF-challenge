@@ -7,3 +7,14 @@
 //card text color
 
 //nested variation on the add registation workflow card
+
+
+export function Card() {
+    return (
+
+        <div></div>
+     
+    );
+  }
+
+  export default Card;

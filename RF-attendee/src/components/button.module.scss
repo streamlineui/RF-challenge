@@ -8,11 +8,13 @@
     @include text(detail-button);
     padding: 0.625rem 1.25rem;
     border-radius: 4px;
+    transition: all 0.3s ease;
     
 
     //create hover state for button and connect 
     &:hover {
       background-color: $color-brand-primary-dark;
+
     }
 
     
