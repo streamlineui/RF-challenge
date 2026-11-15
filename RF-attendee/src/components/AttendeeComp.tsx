@@ -36,7 +36,7 @@ export function AttendeeComp() {
               <p>Description that explains the value goes here. Description that explains the value goes here. </p>
             </div>
 
-            <div className={styles.item}>
+            <div className={styles.item} >
               <h4 className={styles.rowTitle}>General</h4>
               <p>Define Attendee types & attributes</p>
             </div>
