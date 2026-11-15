@@ -1,6 +1,6 @@
 
 //import image
-import styles from './header.module.scss';
+import styles from './Header.module.scss';
 
 import LogoL from '../assets/images/LogoL.png'; 
 
@@ -17,3 +17,5 @@ export function Header() {
       </header>
     );
   }
+
+  export default Header;

@@ -1,5 +1,5 @@
 // 1. Load the built-in Sass map module at the very top
-@use 'variables' as *;
+@use '_variables' as *;
 @use "sass:map";
 
 // 2. Define your typography map

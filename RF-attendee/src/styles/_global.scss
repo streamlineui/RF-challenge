@@ -1,12 +1,7 @@
 //page styling and defaults
 
-
-
-
-
-
-@import 'variables';
-@import 'mixins'; 
+@use '_variables' as *;
+@use '_mixins' as *;
 
 /* 1. Global Box-Sizing */
 html,
