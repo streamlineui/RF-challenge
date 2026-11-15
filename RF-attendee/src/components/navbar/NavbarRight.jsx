@@ -4,7 +4,8 @@ export default function NavbarRight() {
     return (
       <div className={styles.NavbarRight}>
 
-        <header> </header>
+        <h1>RainFocus Summit</h1>
+        
         <div className={styles.details}> </div>
         <div className={styles.search}> </div>
         
@@ -12,5 +13,6 @@ export default function NavbarRight() {
         <div className={styles.megaNavWrapper}> </div>
 
       </div>
+      
     );
   }

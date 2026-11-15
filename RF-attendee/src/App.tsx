@@ -5,6 +5,8 @@ import viteLogo from './assets/vite.svg'
 import './App.scss'
 import { Attendee } from './pages/Attendee';
 import { NavbarLeft } from './components/navbar/NavbarLeft.jsx';
+import { NavbarRight } from './components/navbar/NavbarLeft.jsx';
+
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 
@@ -19,6 +21,7 @@ function App() {
   return (
     <div>
     <NavbarLeft />
+    <NavbarRight />
     <Attendee />
     </div>
 
