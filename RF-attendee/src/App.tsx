@@ -4,19 +4,32 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.scss'
 import { Attendee } from './pages/attendee/Attendee.jsx';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 
-function App() {
 /*
   const [count, setCount] = useState(0)
 
   */
 
+// src/App.jsx
+
+function App() {
   return (
-    <main>
-      <Attendee/>
-    </main>
+    <BrowserRouter>
+      {/* Optional navigation links */}
+      <nav>
+      <Link to="/attendees">Attendees</Link>
+      </nav>
+
+      {/* Route definitions */}
+      <Routes>
+        <Route path="/attendees" element={<Attendee/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App
+export default App;
+
+
