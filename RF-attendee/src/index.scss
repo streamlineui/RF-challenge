@@ -1,0 +1,18 @@
+// 1. Load your variables and mixins globally or as needed
+@use 'styles/_variables' as *;
+@use 'styles/_mixins' as *;
+
+// 2. Import your global stylesheet (resets, body background, etc.)
+@use 'styles/_global'; 
+
+// 3. Any true global overrides for the entire app root
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $color-page-surface; // Uses your variable from _variables.scss
+  font-family: 'Inter', sans-serif;
+}
