@@ -54,7 +54,7 @@ export function AttendeeComp() {
         </h4>
 
         <div className={styles.Rows}>
-
+{/* no map function here bc content repeats, array creation unecessary */}
             <div className={styles.Row}>
             <Card title="Attendee Registration" />
             <Card title="Attendee Registration"/>
@@ -66,6 +66,20 @@ export function AttendeeComp() {
             description="Add Registration Workflow"
             icon={addCircle}
             centered
+            />
+
+<Card 
+            description="Add Registration Workflow"
+            icon={addCircle}
+            centered
+            hidden
+            />
+
+<Card 
+            description="Add Registration Workflow"
+            icon={addCircle}
+            centered
+            hidden
             />
 
         </div>

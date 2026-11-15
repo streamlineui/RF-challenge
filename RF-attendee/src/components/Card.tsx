@@ -8,10 +8,11 @@ interface CardProps {
     icon?: string;
     className?: string;
     centered?: boolean;
+    hidden?: boolean;
   }
   
-  export function Card({ title, description, icon, className, centered }: CardProps) {
-    const classes = [styles.card, centered && styles.centered, className]
+  export function Card({ title, description, icon, className, centered, hidden }: CardProps) {
+    const classes = [styles.card, centered && styles.centered, hidden && styles.hidden, className]
       .filter(Boolean)
       .join(' ');
   
