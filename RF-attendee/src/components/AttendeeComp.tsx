@@ -55,17 +55,16 @@ export function AttendeeComp() {
 
         <div className={styles.Rows}>
         <div className={styles.Row}>
-          <Card />
-          <Card />
-          <Card />
+          <Card title="Attendee Registration" />
+          <Card title="Attendee Registration"/>
+          <Card title="Attendee Registration"/>
         </div>
 
         <div className={styles.Row}>
         <Card 
-          title="Custom Workflow" 
-          description="Configure advanced rule-based routing for special guests"
+          description="Add Registration Workflow"
           icon={addCircle}
-          className={styles.highlightedCard} 
+          className={styles.centered} 
         />
         </div>
 

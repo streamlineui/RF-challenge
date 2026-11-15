@@ -17,7 +17,7 @@ export function Card({ title, description, icon, className }: CardProps) {
           {/* Uses the passed icon prop, or falls back to LogicArrow if none is provided */}
           <img src={icon || LogicArrow} alt="icon" className={styles.avatar} />
           {/* Uses the passed title prop, with a safe fallback */}
-          <h4>{title || "Attendee Registration"}</h4>
+          {title && <h4>{title}</h4>}
         </div>
         {/* Uses the passed description prop, with a safe fallback */}
         <p>{description || "Start by creating a general registration workflow"}</p>
