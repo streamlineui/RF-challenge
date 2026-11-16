@@ -1,22 +1,26 @@
 @use '../../styles/_variables' as *;
 @use '../../styles/_mixins' as *;
 
-.NavWrapper {
+:root {
+    --sidebar-width: 260px; /* Change this in one place, and everything updates */
+  }
+
+.navWrapper {
     display: flex;
     min-height: 100vh;
-    width: 100%;
-    align-items: flex-start; /* Required so sticky positioning works correctly */
+    width: 13.4375rem;
   }
+
 
   .sidebarContainer {
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    display: flex; /* Places NavbarLeft and NavbarRight next to each other */
-    flex-shrink: 0; /* Prevents the sidebar from shrinking */
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: var(--sidebar-width); /* Replace with your actual total sidebar width */
+  display: flex; /* Places NavbarLeft and NavbarRight next to each other */
+  flex-shrink: 1;
+  z-index: 100;
+  background-color: #fff; /* Keeps the sidebar on top of page content if they overlap */
+}
 
-  .contentContainer {
-    flex: 1; /* Forces the main content to fill all remaining space on the right */
-    min-width: 0; /* Prevents flex child content from overflowing */
-  }

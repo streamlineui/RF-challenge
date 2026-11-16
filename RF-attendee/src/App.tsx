@@ -20,7 +20,12 @@ import { NavWrapper } from "./components/layout/NavWrapper.js";
 export default function App() {
   return (
     <div className={styles.pageF}>
-      <NavWrapper />
+      <NavWrapper >
+      <NavbarLeft />
+      <NavbarRight />
+        </NavWrapper >
+
+
       <PageWrapper>
         <Attendee />
       </PageWrapper>
