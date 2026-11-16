@@ -71,6 +71,11 @@
 
     }
 
+    /* Added rule to hide NavbarRight at tablet size and below */
+    @media (max-width: 768px) {
+        display: none;
+    }
+
 }
 
 .megaNavWrapper {
