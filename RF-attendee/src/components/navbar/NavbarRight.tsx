@@ -5,7 +5,11 @@ export default function NavbarRight() {
     <div className={styles.NavbarRight}>
       <header>RainFocus Summit</header>
 
-      <div className={styles.details}> </div>
+      <div className={styles.details}>
+        <p>Lehi,UT </p>
+        <p>•</p>
+        <p>December 15th</p>
+      </div>
       <div className={styles.search}> </div>
 
       <div className={styles.megaNavWrapper}> </div>

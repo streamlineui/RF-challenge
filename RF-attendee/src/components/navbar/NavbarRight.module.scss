@@ -32,6 +32,12 @@
         align-items: flex-start;
         align-self: stretch;
 
+        p {
+            @include text(detail-metadata);
+            color: 000;
+
+        }
+
     }
 
     .search {
