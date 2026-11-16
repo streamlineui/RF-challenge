@@ -3,7 +3,7 @@ import styles from "./NavbarRight.module.scss";
 export default function NavbarRight() {
   return (
     <div className={styles.NavbarRight}>
-      <h1>RainFocus Summit</h1>
+      <header>RainFocus Summit</header>
 
       <div className={styles.details}> </div>
       <div className={styles.search}> </div>

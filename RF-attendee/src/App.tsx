@@ -1,14 +1,15 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.scss'
-import { Attendee } from './pages/Attendee';
-import  NavbarLeft from "./components/navbar/NavbarLeft.js";
-import  NavbarRight from "./components/navbar/NavbarRight.jsx";
+import { useState } from "react";
+import heroImg from "./assets/hero.png";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "./assets/vite.svg";
+import styles from "./App.module.scss";
+import { Attendee } from "./pages/Attendee";
+import NavbarLeft from "./components/navbar/NavbarLeft.js";
+import NavbarRight from "./components/navbar/NavbarRight.jsx";
 
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { PageWrapper } from "./components/layout/PageWrapper.js";
+import { NavWrapper } from "./components/layout/NavWrapper.js";
 
 /*
   const [count, setCount] = useState(0)
@@ -16,18 +17,13 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
   */
 
 // src/App.jsx
-
-function App() {
+export default function App() {
   return (
-    <div>
-    <NavbarLeft />
-    <NavbarRight />
-    <Attendee />
+    <div className={styles.pageF}>
+      <NavWrapper />
+      <PageWrapper>
+        <Attendee />
+      </PageWrapper>
     </div>
-
   );
 }
-
-export default App;
-
-

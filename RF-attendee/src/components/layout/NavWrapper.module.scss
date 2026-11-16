@@ -1,0 +1,22 @@
+@use '../../styles/_variables' as *;
+@use '../../styles/_mixins' as *;
+
+.NavWrapper {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    align-items: flex-start; /* Required so sticky positioning works correctly */
+  }
+
+  .sidebarContainer {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex; /* Places NavbarLeft and NavbarRight next to each other */
+    flex-shrink: 0; /* Prevents the sidebar from shrinking */
+  }
+
+  .contentContainer {
+    flex: 1; /* Forces the main content to fill all remaining space on the right */
+    min-width: 0; /* Prevents flex child content from overflowing */
+  }

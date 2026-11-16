@@ -7,7 +7,7 @@ import styles from "./NavbarLeft.module.scss";
 
 export default function NavbarLeft() {
   return (
-    <div className={styles.NavbarLeft}>
+    <div className={styles.NavBarLeft}>
       <div className={styles.top}>
         <div className={styles.NavLogo}>
           <img src={RfLogo} alt="RfLogo" className={styles.logo} />
