@@ -123,7 +123,7 @@ color: $color-neutral-gray;
 
             color: $color-brand-primary-main;
             @include text(detail-label-gray);
-            background-color: $color-page-border;
+            background-color: $color-brand-primary-5-fill;
             border-radius: 0.5rem;
         }
     }
