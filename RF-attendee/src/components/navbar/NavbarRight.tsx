@@ -6,9 +6,10 @@ export default function NavbarRight() {
       <header>RainFocus Summit</header>
 
       <div className={styles.details}>
-        <p>Lehi,UT </p>
+        <p>Lehi,UT </p> &nbsp;
         <p>•</p>
-        <p>December 15th</p>
+        &nbsp;
+        <p> December 15th</p>
       </div>
       <div className={styles.search}> </div>
 
