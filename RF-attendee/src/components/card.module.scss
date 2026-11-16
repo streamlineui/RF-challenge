@@ -3,15 +3,15 @@
 
 .card {
 
-    flex: 1;           // Makes every item stretch equally to fill the row
-    min-width: 0;      // Crucial: prevents text/content from breaking the flex layout
+  flex: 1 1 0%;         // Allows cards to scale, grow, and shrink evenly in a row
+    min-width: 0;     // Crucial: prevents text/content from breaking the flex layout
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.25rem;
     flex-shrink: 0;
     align-self: stretch;
-    height: 7.5rem;
+    min-height: 7.5rem;
     padding: 1.5rem 2rem;
 
     border-radius: 0.25rem;
@@ -40,10 +40,13 @@
         }
 
         p {
-            @include text(detail-label-support);
-            color: $color-brand-primary-dark;
-            width: 16.6875rem;
-        }
+          @include text(detail-label-support);
+          color: $color-brand-primary-dark;
+          width: 100%;          // Changed from fixed width to 100% so it respects card bounds
+          max-width: 100%;
+          word-break: break-word; // Ensures long words wrap nicely
+          overflow-wrap: break-word;
+      }
 
         &.hidden {
             visibility: hidden
