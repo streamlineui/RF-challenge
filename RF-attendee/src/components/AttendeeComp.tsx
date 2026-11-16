@@ -1,5 +1,4 @@
 import { Card } from "./Card";
-import LogicArrow from "../assets/images/LogicArrow.svg";
 import styles from "./AttendeeComp.module.scss";
 import addCircle from "../assets/images/addCircle.svg";
 import PersonPortal from "../assets/images/PersonPortal.svg";
