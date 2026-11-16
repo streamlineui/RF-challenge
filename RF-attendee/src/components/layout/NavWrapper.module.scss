@@ -2,28 +2,30 @@
 @use '../../styles/_mixins' as *;
 
 :root {
-    --sidebar-width: 260px; /* Change this in one place, and everything updates */
-  }
+  --sidebar-width: 260px;
+  /* Change this in one place, and everything updates */
+}
 
 .navWrapper {
-    display: flex;
+  display: flex;
+  min-height: 100vh;
+  width: 13.4375rem;
+}
 
-    min-height: 100vh;
-    width: 13.4375rem;
-  }
 
+.sidebarContainer {
 
-  .sidebarContainer {
-   
   position: fixed;
   top: 0;
   left: 0;
   align-self: flex-start;
   height: 100vh;
-flex: 0 0 13.4375rem;  /* Replace with your actual total sidebar width */
-  display: flex; /* Places NavbarLeft and NavbarRight next to each other */
+  flex: 0 0 13.4375rem;
+  /* Replace with your actual total sidebar width */
+  display: flex;
+  /* Places NavbarLeft and NavbarRight next to each other */
   flex-shrink: 1;
- 
-  background-color: #fff; /* Keeps the sidebar on top of page content if they overlap */
-}
 
+  background-color: #fff;
+  /* Keeps the sidebar on top of page content if they overlap */
+}

@@ -56,6 +56,16 @@
             border: 1px solid $color-page-border;
             background: $color-page-surface;
 
+            @media (min-width: 768px) {
+                
+                width: 90%;
+            }
+
+            @media (min-width: 320px) {
+                width: 100%;
+                
+            }
+
             .item {
 
                 display: flex;
