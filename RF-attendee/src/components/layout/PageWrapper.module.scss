@@ -4,8 +4,10 @@
 .pageWrapper {
     display: flex;
     padding: 2.5rem 3rem;
+    margin-left: 5rem;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+min-width: 1202px;
     gap: 2.5rem;
 }
